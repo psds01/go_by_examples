@@ -20,4 +20,9 @@ func main() {
 		fmt.Println(j)
 	}
 
+	for {
+		fmt.Println("Crazy for loop, no condition, either break it inside this for loop or return from this loop from the function which has this loop")
+		break
+	}
+
 }
