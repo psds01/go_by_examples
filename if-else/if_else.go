@@ -24,4 +24,17 @@ func main() {
 	// undefined: num
 	// fmt.Println(num)
 
+	num := 17
+	// var num = 39
+	if num%2 == 0 && num%3 == 0 {
+		fmt.Println(num, "is divisible by 2 and 3, hence 6")
+	} else if num%2 == 0 {
+		fmt.Println(num, "is divisible by 2")
+	} else if num%3 == 0 {
+		fmt.Println(num, "is divisible by 3")
+	} else {
+		fmt.Println(num, "is not divisible by 2 or 3")
+
+	}
+
 }
