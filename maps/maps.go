@@ -64,6 +64,6 @@ func main() {
 	// declare a map and initialize
 	// use MAKE if you can't initialize
 	bikeToRuppesMap := map[string]int{"suzuki": 50000, "duke": 250000}
-	fmt.Println(bikeToRuppesMap)
+	fmt.Println("Bike prices map", bikeToRuppesMap)
 
 }
