@@ -31,6 +31,17 @@ func main() {
 
 	// get elements by index
 	// syntax: slice[index]
-	fmt.Println("The element at index 4 is", stringSlice[4])
+	fmt.Println("The element at index 4 is:", stringSlice[4])
 
+	fmt.Println("Current length of the slice:", len(stringSlice))
+
+	// builtin : append
+	// syntax : var = append(var, element)
+	// variable length append: var = append(var, element1, element2, ...)
+	stringSlice = append(stringSlice, ":")
+	fmt.Println(stringSlice)
+	stringSlice = append(stringSlice, "-", ">")
+	fmt.Println(stringSlice)
+	stringSlice = append(stringSlice, "I", " ", "w", "a", "n", "t")
+	fmt.Println(stringSlice)
 }
