@@ -29,5 +29,6 @@ func main() {
 	arr[4] = 100
 	fmt.Println("Full array", arr)
 	fmt.Println("Value at index 4:", arr[4])
+	fmt.Println("length of the array", len(arr))
 
 }
