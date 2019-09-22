@@ -24,4 +24,10 @@ func main() {
 	var stringArr [10]string
 	fmt.Println(stringArr)
 
+	var arr [10]int
+	// set value at an index; index starts at 0 and ends at len(arr)-1
+	arr[4] = 100
+	fmt.Println("Full array", arr)
+	fmt.Println("Value at index 4:", arr[4])
+
 }
