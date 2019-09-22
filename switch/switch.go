@@ -17,4 +17,12 @@ func main() {
 		fmt.Println("ferrari!!!")
 	}
 
+	num := 7
+	switch num % 2 {
+	case 0:
+		fmt.Println(num, "is even")
+	default:
+		fmt.Println(num, "is odd")
+	}
+
 }
