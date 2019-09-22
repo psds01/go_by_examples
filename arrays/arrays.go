@@ -35,4 +35,16 @@ func main() {
 	evenArr := [5]int{2, 4, 6, 8, 10}
 	fmt.Println("array of len 5 of type int: containing only even elements:", evenArr)
 
+	// VAR varName [SHAPE][SHAPE]...[SHAPE]INT
+	// shapes should be CONST
+	const shapeX = 3
+	const shapeY = 5
+	var twoD [shapeX][shapeY]int
+	for i := 0; i < shapeX; i++ {
+		for j := 0; j < shapeY; j++ {
+			twoD[i][j] = (j + i) * (i + 1)
+		}
+	}
+	fmt.Println(twoD)
+
 }
