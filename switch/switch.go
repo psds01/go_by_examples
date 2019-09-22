@@ -28,6 +28,7 @@ func main() {
 	}
 
 	// switch without an expression
+	// same as if
 	whatDoWeWant := "car"
 	switch {
 	case whatDoWeWant == "bike":
