@@ -71,4 +71,14 @@ func main() {
 	mySlice := []int{1, 1, 2, 3, 5, 8, 13, 21}
 	fmt.Println(mySlice)
 
+	// can we declare slice with VAR?
+	var varSlice []int
+	fmt.Println(varSlice)
+	varSlice = append(varSlice, 1)
+	varSlice = append(varSlice, 2)
+	varSlice = append(varSlice, 3)
+	fmt.Println(varSlice)
+	fmt.Println(varSlice[:2])
+	fmt.Println("Declared slice like a var!! slice operations supported as well!")
+
 }
