@@ -49,4 +49,16 @@ func main() {
 	delete(carToPriceMap, "jaguar")
 	fmt.Println("No errors!!", carToPriceMap)
 
+	// get isPresent, value from a map by key
+	// syntax: value, isKeyPresent := map[key]
+	mercedesPrice, isMercedesAvailble := carToPriceMap["mercedes"]
+	fmt.Println("is mercedes availble?", isMercedesAvailble, "price", mercedesPrice)
+
+	jaguarPrice, isJaguarPresent := carToPriceMap["jaguar"]
+	if isJaguarPresent {
+		fmt.Println("price:", jaguarPrice)
+	} else {
+		fmt.Println("Jaguar is not available")
+	}
+
 }
