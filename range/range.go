@@ -26,4 +26,20 @@ func main() {
 
 	fmt.Println("Sum of total elements in the array", sum)
 
+	nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+	evenSum := 0
+	oddSum := 0
+	indicesForOddNumber := []int{}
+	indicesForEvenNumber := []int{}
+	for index, num := range nums {
+		if num%2 == 0 {
+			evenSum += num
+			indicesForEvenNumber = append(indicesForEvenNumber, index)
+		} else {
+			oddSum += num
+			indicesForOddNumber = append(indicesForOddNumber, index)
+		}
+	}
+	fmt.Println("Sum of elements at indices", indicesForEvenNumber, "is", evenSum)
+	fmt.Println("Sum of elements at indices", indicesForOddNumber, "is", oddSum)
 }
