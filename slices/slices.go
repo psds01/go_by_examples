@@ -63,4 +63,12 @@ func main() {
 	fmt.Println("till 5:", stringSlice[:5])
 	fmt.Println("from 3:", stringSlice[3:])
 
+	// just like array definition except there is no length
+	// declare and initialize a slice
+	// just like except the LENGTH TYPE info
+	// arr: arrName := [SIZE]TYPE{element,...}
+	// slc : slcName := []TYPE{element,...}
+	mySlice := []int{1, 1, 2, 3, 5, 8, 13, 21}
+	fmt.Println(mySlice)
+
 }
