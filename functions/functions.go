@@ -39,6 +39,18 @@ func addAndSubtractTwoNumber(a, b int) (int, int) {
 	return addTwoNumbers(a, b), subtractTwoNumbers(a, b)
 }
 
+// does not return anything, hence no return type is given!
+func sumArbitraryNumberOfInts(nums ...int) {
+	fmt.Print(nums, " ")
+	total := 0
+
+	for _, num := range nums {
+		total += num
+	}
+	fmt.Println(total)
+
+}
+
 func main() {
 
 	// fmt.Println(2 / 3)
@@ -59,5 +71,14 @@ func main() {
 
 	mul, _ := multiplyAndDivideTwoNumber(10, 5)
 	fmt.Println("Multiplication of 10 and 5 is", mul)
+
+	// variadic function
+	sumArbitraryNumberOfInts(10)
+	sumArbitraryNumberOfInts(10, 20, 40)
+
+	// nums := [5]int{1, 2, 3, 4, 5}
+	// WTF: does not accept arr!!
+	nums := []int{1, 2, 3, 4, 5}
+	sumArbitraryNumberOfInts(nums...)
 
 }
