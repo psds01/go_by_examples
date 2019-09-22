@@ -47,4 +47,14 @@ func main() {
 	}
 	fmt.Println(twoD)
 
+	// print twoD
+	lenTwoD := len(twoD)
+	for i := 0; i < lenTwoD; i++ {
+		for j := 0; j < len(twoD[i]); j++ {
+			fmt.Print(twoD[i][j], ",")
+		}
+		fmt.Println()
+	}
+
+	// how to define ar array of (array of variable length?)
 }
