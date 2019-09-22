@@ -23,4 +23,10 @@ func main() {
 
 	fmt.Println("Get price of bmw in USD:", carToPriceMap["bmw"])
 
+	// get missing key?
+	fmt.Println("Getting price of Out-of-stock car: jaguar", carToPriceMap["jaguar"])
+
+	// can I "get" with a key of different type?
+	// fmt.Println("Getting price of key = 1", carToPriceMap[1])
+	// Nah, type error
 }
