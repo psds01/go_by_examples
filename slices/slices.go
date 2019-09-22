@@ -87,4 +87,18 @@ func main() {
 	fmt.Println("Trying to slice an arr: ", myArr[1:4])
 	fmt.Println("Array also supports slice notation")
 
+	// multi-dimensional slice
+	const outerSize = 3
+	const stride = 2
+	twoDSlice := make([][]int, outerSize)
+	for i := 0; i < outerSize; i++ {
+		innerSize := i + stride
+		// assign a new empty slice to ith element of twoD
+		twoDSlice[i] = make([]int, innerSize)
+		for j := 0; j < innerSize; j++ {
+			// assign value
+			twoDSlice[i][j] = i*2 + j*3
+		}
+	}
+	fmt.Println(twoDSlice)
 }
