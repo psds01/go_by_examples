@@ -21,4 +21,6 @@ func main() {
 	carToPriceMap["mercedes"] = 125000
 	fmt.Println("Prices of cars in USD:", carToPriceMap)
 
+	fmt.Println("Get price of bmw in USD:", carToPriceMap["bmw"])
+
 }
