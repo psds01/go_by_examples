@@ -25,8 +25,28 @@ func main() {
 
 	// get missing key?
 	fmt.Println("Getting price of Out-of-stock car: jaguar", carToPriceMap["jaguar"])
+	// does, calling a key not present in the map, change the map?
+	fmt.Println("Does it change the map? ->", carToPriceMap)
 
 	// can I "get" with a key of different type?
 	// fmt.Println("Getting price of key = 1", carToPriceMap[1])
 	// Nah, type error
+
+	priceOfMercedes := carToPriceMap["mercedes"]
+	fmt.Println("Price of mercedes:", priceOfMercedes)
+
+	// length of the map
+	fmt.Println(len(carToPriceMap))
+
+	// say all BWMs are sold and now we need to remove it
+	// syntax : DELETE(mapName, key)
+	fmt.Println("Map before deleting a key:", carToPriceMap)
+	delete(carToPriceMap, "bmw")
+	fmt.Println("Map after deleting a key:", carToPriceMap)
+
+	// what if I try to delete a key not present in the map?
+	fmt.Println("Deleting jaguar from the map:", carToPriceMap)
+	delete(carToPriceMap, "jaguar")
+	fmt.Println("No errors!!", carToPriceMap)
+
 }
