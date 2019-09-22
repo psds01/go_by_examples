@@ -79,6 +79,12 @@ func main() {
 	varSlice = append(varSlice, 3)
 	fmt.Println(varSlice)
 	fmt.Println(varSlice[:2])
-	fmt.Println("Declared slice like a var!! slice operations supported as well!")
+	fmt.Println("Declared slice like a var!! slice notation supported as well!")
+
+	// what will happen if I use slice notation on an arr?
+	var myArr [5]int
+	fmt.Println(myArr)
+	fmt.Println("Trying to slice an arr: ", myArr[1:4])
+	fmt.Println("Array also supports slice notation")
 
 }
