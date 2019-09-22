@@ -44,4 +44,23 @@ func main() {
 	fmt.Println(stringSlice)
 	stringSlice = append(stringSlice, "I", " ", "w", "a", "n", "t")
 	fmt.Println(stringSlice)
+
+	// COPY:
+	// syntax : COPY(toCopy, fromCopy)
+	copiedSlice := make([]string, len(stringSlice))
+	copy(copiedSlice, stringSlice)
+	fmt.Println("Print copied slice:", copiedSlice)
+
+	// what if I don't give it the exact length of fromCopy?
+	copiedSliceNoLen := make([]string, 2)
+	copy(copiedSliceNoLen, stringSlice)
+	fmt.Println("It will copy only till the length to toCopy:", copiedSliceNoLen)
+
+	// slice operator
+	fmt.Println(stringSlice)
+	slc := stringSlice[2:5]
+	fmt.Println("2 to 5:", slc)
+	fmt.Println("till 5:", stringSlice[:5])
+	fmt.Println("from 3:", stringSlice[3:])
+
 }
