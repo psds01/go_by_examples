@@ -42,4 +42,31 @@ func main() {
 	}
 	fmt.Println("Sum of elements at indices", indicesForEvenNumber, "is", evenSum)
 	fmt.Println("Sum of elements at indices", indicesForOddNumber, "is", oddSum)
+
+	// range over a map
+	// declare a map
+	// myMap := make(map[string]int)
+	// declare and initialize a map
+	myMap := map[string]string{"a": "a", "b": "b", "c": "c", "d": "d"}
+	fmt.Println("range over key, val of", myMap)
+	// sytnax: FOR key, val := RANGE myMap {...}
+	for key, val := range myMap {
+		fmt.Println("key =", key, "value =", val)
+	}
+
+	// range over keys
+	fmt.Println("range over keys of", myMap)
+	// syntax: FOR key := RANGE myMap {...}
+	for key := range myMap {
+		fmt.Println("Key =", key)
+	}
+
+	// range over strings
+	// weird:: prints unicode valu
+	for index, unicodeValue := range "golang" {
+		fmt.Println("Found", unicodeValue, "at index", index)
+	}
+
+	// how to print actual characters then??
+
 }
