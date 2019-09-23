@@ -19,6 +19,6 @@ func fibonacci(n int) int {
 func main() {
 	fmt.Println("Printing factorial of 7:", fact(7))
 	for i := 0; i < 10; i++ {
-		fmt.Println("Fibonacci series at index", i, ":", fibonacci(i))
+		fmt.Println("Fibonacci element at index", i, ":", fibonacci(i))
 	}
 }
